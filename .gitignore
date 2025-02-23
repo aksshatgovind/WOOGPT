@@ -2,9 +2,10 @@
 /cuda
 /starter/*
 !/starter/wizard.txt
-!/starter/woo-model-v2.pkl
+/starter/woo-model-v2.pkl
 agent2.py
 hugging-face-trainer.py
 model.pycuda/
 __pycache__/
 *.dylib
+.env
