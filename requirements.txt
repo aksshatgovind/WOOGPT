@@ -3,3 +3,5 @@ pylzma
 tokenizers
 tqdm
 transformers
+flask
+flask-cors

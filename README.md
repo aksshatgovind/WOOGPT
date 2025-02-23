@@ -30,11 +30,11 @@ Here’s how **WOOGPT** responds based on the type of question asked:
 
 ### 🎭 Wizard of Oz-Related Questions  
 When you ask about *The Wizard of Oz*, WOOGPT provides fun, engaging, and domain-specific answers:  
-![WOOGPT Demo](src/assets/clip1.gif)  
+![WOOGPT Demo](public/assets/clip1.gif)  
 
 ### ❌ Unrelated Questions  
 If you ask something outside the world of Oz, WOOGPT stays in character and gently redirects you back to the magical land:  
-![WOOGPT](src/assets/clip2.gif) 
+![WOOGPT](public/assets/clip2.gif) 
 
 
 ## Acknowledgements

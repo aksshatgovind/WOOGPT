@@ -1,6 +1,8 @@
 /wizard-finetuned
 /cuda
-/starter
+/starter/*
+!/starter/wizard.txt
+!/starter/woo-model-v2.pkl
 agent2.py
 hugging-face-trainer.py
 model.pycuda/
