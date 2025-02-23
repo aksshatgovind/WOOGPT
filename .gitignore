@@ -1,0 +1,9 @@
+/wizard-finetuned
+/cuda
+/starter
+/src/assets
+agent2.py
+hugging-face-trainer.py
+model.pycuda/
+__pycache__/
+*.dylib

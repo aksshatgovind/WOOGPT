@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>WOO GPT</title>
+</head>
+<body class="blurred">
+    <div class="preloader">
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+    <div>
+        <div data-layer="start" class="Start" style="width: 100%; height: 98vh; position: relative; background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 90%); background-image: url(https://cdna.artstation.com/p/assets/images/images/045/041/806/large/ido-hadary-.jpg?1641797565); background-size: cover; 
+        background-position: center;">
+
+            <div data-layer="Notif" class="Notif" 
+            style="top: 36px; right: -1330px; width: 250px; height: 130px; justify-content: center; 
+                align-items: center; position: relative; margin-bottom: -140px; border-radius: 15px; overflow: hidden;">
+
+            <div data-layer="Alert" class="Alert" 
+                style=" padding-top: 0px; border-radius: 15px; overflow: hidden; 
+                    flex-direction: column; justify-content: center; align-items: center;">
+                
+                <div data-svg-wrapper data-layer="Material" class="Material" style="justify-content: center; position: relative;">
+                    <svg width="270" height="140" viewBox="0 0 270 140" fill="none" style="border-radius: 15px;">
+                        <g clip-path="url(#clip0_11_138)" style="border-radius: 15px;">
+                            <rect width="270" height="140" fill="#B3B3B3" fill-opacity="0.72" />
+                            <rect width="270" height="140" fill="#383838" style="mix-blend-mode:color-dodge; border-radius: 15px;" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_11_138">
+                                <rect width="270" height="150" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div data-layer="Title and Description" class="TitleAndDescription" 
+                    style="top:-130px; height: 75px; padding-bottom: 15px; padding-left: 16px; padding-right: 16px; 
+                        flex-direction: column; justify-content: flex-start; align-items: center; 
+                        gap: 2px; display: flex; position: relative;">
+                    
+                    <div data-layer="A Short Title Is Best" class="AShortTitleIsBest" id="d" 
+                        style="top:-140px; align-self: stretch; text-align: center; color: black; font-size: 17px; 
+                            font-family: SF Pro; font-weight: 590; line-height: 22px; word-wrap: break-word">
+                        Wizard Of Oz GPT
+                    </div>
+
+                    <div data-layer="A description should be a short, complete sentence." 
+                        class="ADescriptionShouldBeAShortCompleteSentence" id="d" 
+                        style="align-self: stretch; text-align: center; color: black; font-size: 13px; 
+                            font-family: SF Pro; font-weight: 400; line-height: 18px; word-wrap: break-word">
+                        From flying monkeys to ruby kicks,<br>I got all the Oz lore you need.
+                    </div>
+                </div>
+
+                <div data-layer="Button" class="Button" 
+                    style="top:-150px; position:relative; width: 250px; padding-top: 11px; padding-bottom: 11px; 
+                        border-top: 0.33px rgba(128, 128, 128, 0.55) solid; 
+                        justify-content: center; align-items: center; display: inline-flex">
+                    
+                    <div data-layer="Title" class="Title" id="d" 
+                        style="text-align: center; color: #007AFF; font-size: 15px; 
+                            font-family: SF Pro; font-weight: 590; line-height: 22px; 
+                            word-wrap: break-word">
+                        Speak, O Great One
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div data-layer="Search-Bar" class="SearchBar" style="width: 1080px; height: 41px; padding: 4px; left: 193px; top: 800px; position: relative; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                <div data-svg-wrapper data-layer="Platter" class="platter-container">
+                    <svg width="1086" height="41" viewBox="0 0 1086 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_5_17)">
+                            <rect width="1086" height="40.5" fill="#A6A6A6" fill-opacity="0.7"/>
+                            <rect width="1086" height="40.5" fill="#333333" style="mix-blend-mode:color-dodge"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_5_17">
+                                <rect width="1086" height="40.5" rx="20.25" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div style="top: -25px; left: 0px; position: relative;">
+                        <input type="text" id="input-box" placeholder="Ask the Wizard..." style="width: 1010px;"/>
+                    </div>
+                    <button onclick="sendMessage()" id="sendButton" class="icon-button" style="top: -45px; left: 1090px; border: none; cursor: pointer; padding: 5; position: relative;">
+                        <img class="icon-img" src="https://img.icons8.com/?size=192&id=132&format=png" style="width: 50px; height: 50px; position: relative;">
+                    </button>
+                </div>                
+
+            </div>
+            <div data-layer="Sidebar Row/Add Item" class="SidebarRowAddItem" style="width: 70px; padding-left: 24px; padding-right: 24px; padding-top: 8px; padding-bottom: 8px; left: 1220px; top: 126px; position: absolute; border-radius: 5px; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex;">
+              <div data-layer="Add Button" class="AddButton" style="width: 28px; height: 28px; border-radius: 3px; justify-content: center; align-items: center; display: flex;">
+                <button onclick="sendMessage()" style="top: 0px; left: 50px;  background: none; border: none; cursor: pointer; padding: 5; position: relative;">
+                    <div data-layer="Symbol" class="Symbol" style="width: 28px; height: 28px; text-align: center; color: #007AFF; font-size: 17px; font-family: SF Pro; font-weight: 590; line-height: 22px; word-wrap: break-word">+</div>
+                </button>
+              </div>
+            </div>
+            <div data-layer="TITLE-WOO-GPT" class="TitleWooGpt" id="d" style="width: 1086px; height: 30px; left: 196px; top: 82px; position: absolute; color: rgb(50, 50, 50); font-size: 70px; font-family: Silkscreen; font-weight: 400; word-wrap: break-word; font-family: SF Pro;">WOO GPT<br/></div>
+            <div data-layer="Chatter" class="Chatter" style="width: 1086px; height: 10vh; left: 197px; top: 134px; position: relative">
+                <div data-svg-wrapper data-layer="blur" class="Blur" style="
+                    position: absolute; 
+                    width: 100%; 
+                    height: 100%; 
+                    top: 0; 
+                    left: 0; 
+                    z-index: 1;
+                ">
+                    <svg width="1140" height="655" viewBox="0 0 1140 655" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="1140" height="600" rx="20" fill="#18132B" fill-opacity="0.5"/>
+                    </svg>
+                </div>
+
+                <div id="chat-container" style="position: relative; width: 1140px; height: 557px; top: 0; left: 0; display: flex; flex-direction: column;
+                    justify-content: center; align-items: flex-start; z-index: 2; background: transparent; padding: 20px; overflow-y: auto;"></div>
+            
+            </div>
+            <div data-layer="Status-Bar " class="StatusBar" style="width: 96.7%; height: 21px; padding-left: 26px; padding-right: 26px; left: 0px; top: 0px; position: absolute; background: white; justify-content: space-between; align-items: center; display: inline-flex; border: 0.5px black solid">
+              <div data-layer="Left" class="Left" style="padding-top: 2px; padding-bottom: 2px; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                <div data-layer="Time" class="Time" id="current-time" style="color: black; font-size: 12px; font-weight: 510; word-wrap: break-word"></div>
+                <div data-layer="Date" class="Date" id="current-date" style="color: black; font-size: 12px; font-weight: 510; word-wrap: break-word"></div>
+              </div>
+              <div data-layer="Right" class="Right" style="padding-top: 5px; padding-bottom: 5px; justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+                <div data-svg-wrapper data-layer="Combined Shape" class="CombinedShape">
+                <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5228 1.11732C14.4467 1.30109 14.4467 1.53406 14.4467 2V9C14.4467 9.46594 14.4467 9.69891 14.5228 9.88268C14.6243 10.1277 14.8189 10.3224 15.064 10.4239C15.2477 10.5 15.4807 10.5 15.9467 10.5C16.4126 10.5 16.6456 10.5 16.8293 10.4239C17.0744 10.3224 17.269 10.1277 17.3705 9.88268C17.4467 9.69891 17.4467 9.46594 17.4467 9V2C17.4467 1.53406 17.4467 1.30109 17.3705 1.11732C17.269 0.872288 17.0744 0.677614 16.8293 0.57612C16.6456 0.5 16.4126 0.5 15.9467 0.5C15.4807 0.5 15.2477 0.5 15.064 0.57612C14.8189 0.677614 14.6243 0.872288 14.5228 1.11732Z" fill="black"/>
+                <path d="M9.94666 4C9.94666 3.53406 9.94666 3.30109 10.0228 3.11732C10.1243 2.87229 10.3189 2.67761 10.564 2.57612C10.7477 2.5 10.9807 2.5 11.4467 2.5C11.9126 2.5 12.1456 2.5 12.3293 2.57612C12.5744 2.67761 12.769 2.87229 12.8705 3.11732C12.9467 3.30109 12.9467 3.53406 12.9467 4V9C12.9467 9.46594 12.9467 9.69891 12.8705 9.88268C12.769 10.1277 12.5744 10.3224 12.3293 10.4239C12.1456 10.5 11.9126 10.5 11.4467 10.5C10.9807 10.5 10.7477 10.5 10.564 10.4239C10.3189 10.3224 10.1243 10.1277 10.0228 9.88268C9.94666 9.69891 9.94666 9.46594 9.94666 9V4Z" fill="black"/>
+                <path d="M5.52278 5.11732C5.44666 5.30109 5.44666 5.53406 5.44666 6V9C5.44666 9.46594 5.44666 9.69891 5.52278 9.88268C5.62427 10.1277 5.81894 10.3224 6.06397 10.4239C6.24774 10.5 6.48071 10.5 6.94666 10.5C7.4126 10.5 7.64557 10.5 7.82934 10.4239C8.07437 10.3224 8.26904 10.1277 8.37053 9.88268C8.44666 9.69891 8.44666 9.46594 8.44666 9V6C8.44666 5.53406 8.44666 5.30109 8.37053 5.11732C8.26904 4.87229 8.07437 4.67761 7.82934 4.57612C7.64557 4.5 7.4126 4.5 6.94666 4.5C6.48071 4.5 6.24774 4.5 6.06397 4.57612C5.81894 4.67761 5.62427 4.87229 5.52278 5.11732Z" fill="black"/>
+                <path d="M1.02278 6.61732C0.946655 6.80109 0.946655 7.03406 0.946655 7.5V9C0.946655 9.46594 0.946655 9.69891 1.02278 9.88268C1.12427 10.1277 1.31894 10.3224 1.56397 10.4239C1.74774 10.5 1.98071 10.5 2.44666 10.5C2.9126 10.5 3.14557 10.5 3.32934 10.4239C3.57437 10.3224 3.76904 10.1277 3.87053 9.88268C3.94666 9.69891 3.94666 9.46594 3.94666 9V7.5C3.94666 7.03406 3.94666 6.80109 3.87053 6.61732C3.76904 6.37229 3.57437 6.17761 3.32934 6.07612C3.14557 6 2.9126 6 2.44666 6C1.98071 6 1.74774 6 1.56397 6.07612C1.31894 6.17761 1.12427 6.37229 1.02278 6.61732Z" fill="black"/>
+                </svg>
+                </div>
+                <div data-svg-wrapper data-layer="Combined Shape" class="CombinedShape">
+                <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9513 4.74601C13.0648 4.85251 13.2398 4.85301 13.3503 4.74301L14.4143 3.67901C14.5288 3.56401 14.5293 3.37451 14.4113 3.26301C12.6023 1.55051 10.1608 0.500012 7.47335 0.500012C4.78585 0.500012 2.34435 1.55051 0.535345 3.26301C0.417345 3.37451 0.417845 3.56401 0.532345 3.67901L1.59635 4.74301C1.70685 4.85301 1.88185 4.85251 1.99535 4.74601C3.42985 3.40151 5.35685 2.57701 7.47335 2.57701C9.58984 2.57701 11.5168 3.40151 12.9513 4.74601Z" fill="black"/>
+                <path d="M10.5045 7.19646C10.62 7.29946 10.7925 7.30046 10.902 7.19096L11.9645 6.12846C12.08 6.01296 12.0805 5.82046 11.9605 5.70996C10.7795 4.62446 9.20397 3.96146 7.47347 3.96146C5.74297 3.96146 4.16747 4.62446 2.98647 5.70996C2.86647 5.82046 2.86697 6.01296 2.98247 6.12846L4.04497 7.19096C4.15447 7.30046 4.32697 7.29946 4.44247 7.19646C5.24847 6.47696 6.31047 6.03846 7.47347 6.03846C8.63647 6.03846 9.69847 6.47696 10.5045 7.19646Z" fill="black"/>
+                <path d="M9.50832 8.16111C9.63382 8.26611 9.63282 8.46161 9.51682 8.57761L7.67882 10.4156C7.56632 10.5281 7.38332 10.5281 7.27082 10.4156L5.43282 8.57761C5.31682 8.46161 5.31532 8.26611 5.44132 8.16111C5.99182 7.70061 6.70082 7.42311 7.47482 7.42311C8.24882 7.42311 8.95732 7.70061 9.50832 8.16111Z" fill="black"/>
+                </svg>
+                </div>
+                <div data-layer="100%" id="current-date" style="text-align: right; color: black; font-size: 12px; font-family: SF Pro; font-weight: 510; line-height: 14px; word-wrap: break-word">90%</div>
+                <div data-layer="Battery Icon" class="BatteryIcon" style="width: 26.50px; height: 12px; position: relative">
+                  <div data-svg-wrapper data-layer="Combined Shape" class="CombinedShape" style="left: 0px; top: 0px; position: absolute">
+                  <svg width="27" height="13" viewBox="0 0 27 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.4">
+                  <mask id="path-1-inside-1_5_59" fill="white">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.7 1.5H19.3C20.2266 1.5 20.8614 1.50078 21.3532 1.54096C21.8333 1.58018 22.0883 1.65192 22.2715 1.74524C22.6948 1.96095 23.039 2.30516 23.2548 2.72852C23.3481 2.91166 23.4198 3.16673 23.459 3.64684C23.4992 4.13862 23.5 4.77341 23.5 5.7V7.3C23.5 8.22659 23.4992 8.86138 23.459 9.35316C23.4198 9.83327 23.3481 10.0883 23.2548 10.2715C23.039 10.6948 22.6948 11.039 22.2715 11.2548C22.0883 11.3481 21.8333 11.4198 21.3532 11.459C20.8614 11.4992 20.2266 11.5 19.3 11.5H5.7C4.77341 11.5 4.13862 11.4992 3.64684 11.459C3.16673 11.4198 2.91166 11.3481 2.72852 11.2548C2.30516 11.039 1.96095 10.6948 1.74524 10.2715C1.65192 10.0883 1.58018 9.83327 1.54096 9.35316C1.50078 8.86138 1.5 8.22659 1.5 7.3V5.7C1.5 4.77341 1.50078 4.13862 1.54096 3.64684C1.58018 3.16673 1.65192 2.91166 1.74524 2.72852C1.96095 2.30516 2.30516 1.96095 2.72852 1.74524C2.91166 1.65192 3.16673 1.58018 3.64684 1.54096C4.13862 1.50078 4.77341 1.5 5.7 1.5ZM0.5 5.7C0.5 3.87983 0.5 2.96974 0.854229 2.27453C1.16582 1.663 1.663 1.16582 2.27453 0.854229C2.96974 0.5 3.87983 0.5 5.7 0.5H19.3C21.1202 0.5 22.0303 0.5 22.7255 0.854229C23.337 1.16582 23.8342 1.663 24.1458 2.27453C24.5 2.96974 24.5 3.87983 24.5 5.7V7.3C24.5 9.12017 24.5 10.0303 24.1458 10.7255C23.8342 11.337 23.337 11.8342 22.7255 12.1458C22.0303 12.5 21.1202 12.5 19.3 12.5H5.7C3.87983 12.5 2.96974 12.5 2.27453 12.1458C1.663 11.8342 1.16582 11.337 0.854229 10.7255C0.5 10.0303 0.5 9.12017 0.5 7.3V5.7ZM27 6.5C27 5.56808 26.3626 4.78503 25.5 4.56301V8.43699C26.3626 8.21497 27 7.43192 27 6.5Z"/>
+                  </mask>
+                  <path d="M21.3532 1.54096L21.2717 2.53764L21.3532 1.54096ZM22.2715 1.74524L21.8175 2.63624L21.8175 2.63624L22.2715 1.74524ZM23.2548 2.72852L24.1458 2.27453L24.1458 2.27453L23.2548 2.72852ZM23.459 3.64684L22.4624 3.72827V3.72827L23.459 3.64684ZM23.459 9.35316L22.4624 9.27173V9.27173L23.459 9.35316ZM23.2548 10.2715L24.1458 10.7255L24.1458 10.7255L23.2548 10.2715ZM22.2715 11.2548L21.8175 10.3638L21.8175 10.3638L22.2715 11.2548ZM21.3532 11.459L21.4346 12.4557L21.3532 11.459ZM3.64684 11.459L3.56541 12.4557L3.56541 12.4557L3.64684 11.459ZM2.72852 11.2548L3.18251 10.3638L3.18251 10.3638L2.72852 11.2548ZM1.74524 10.2715L0.854229 10.7255L0.854229 10.7255L1.74524 10.2715ZM1.54096 9.35316L2.53764 9.27173V9.27173L1.54096 9.35316ZM1.54096 3.64684L2.53764 3.72827L1.54096 3.64684ZM1.74524 2.72852L2.63624 3.18251L2.63624 3.18251L1.74524 2.72852ZM2.72852 1.74524L3.18251 2.63624L3.18251 2.63624L2.72852 1.74524ZM3.64684 1.54096L3.72827 2.53764H3.72827L3.64684 1.54096ZM0.854229 2.27453L1.74524 2.72852L0.854229 2.27453ZM2.27453 0.854229L2.72852 1.74524L2.27453 0.854229ZM22.7255 0.854229L23.1795 -0.0367776V-0.0367777L22.7255 0.854229ZM24.1458 2.27453L23.2548 2.72852V2.72852L24.1458 2.27453ZM24.1458 10.7255L23.2548 10.2715L24.1458 10.7255ZM22.7255 12.1458L22.2715 11.2548L22.7255 12.1458ZM2.27453 12.1458L2.72852 11.2548H2.72852L2.27453 12.1458ZM0.854229 10.7255L-0.0367777 11.1795L-0.0367776 11.1795L0.854229 10.7255ZM25.5 4.56301L25.7493 3.59457L24.5 3.27303V4.56301H25.5ZM25.5 8.43699H24.5V9.72696L25.7493 9.40543L25.5 8.43699ZM19.3 0.5H5.7V2.5H19.3V0.5ZM21.4346 0.544279C20.8926 0.499992 20.2097 0.5 19.3 0.5V2.5C20.2435 2.5 20.8302 2.50156 21.2717 2.53764L21.4346 0.544279ZM22.7255 0.85423C22.3776 0.676994 21.9761 0.588523 21.4346 0.544279L21.2717 2.53764C21.6904 2.57184 21.7991 2.62685 21.8175 2.63624L22.7255 0.85423ZM24.1458 2.27453C23.8342 1.663 23.337 1.16582 22.7255 0.854229L21.8175 2.63624C22.0527 2.75608 22.2439 2.94731 22.3638 3.18251L24.1458 2.27453ZM24.4557 3.56541C24.4115 3.02388 24.323 2.62237 24.1458 2.27453L22.3638 3.18251C22.3732 3.20095 22.4282 3.30959 22.4624 3.72827L24.4557 3.56541ZM24.5 5.7C24.5 4.79033 24.5 4.10745 24.4557 3.56541L22.4624 3.72827C22.4984 4.16978 22.5 4.7565 22.5 5.7H24.5ZM24.5 7.3V5.7H22.5V7.3H24.5ZM24.4557 9.43459C24.5 8.89255 24.5 8.20967 24.5 7.3H22.5C22.5 8.2435 22.4984 8.83022 22.4624 9.27173L24.4557 9.43459ZM24.1458 10.7255C24.323 10.3776 24.4115 9.97612 24.4557 9.43459L22.4624 9.27173C22.4282 9.69041 22.3732 9.79905 22.3638 9.81749L24.1458 10.7255ZM22.7255 12.1458C23.337 11.8342 23.8342 11.337 24.1458 10.7255L22.3638 9.81749C22.2439 10.0527 22.0527 10.2439 21.8175 10.3638L22.7255 12.1458ZM21.4346 12.4557C21.9761 12.4115 22.3776 12.323 22.7255 12.1458L21.8175 10.3638C21.7991 10.3732 21.6904 10.4282 21.2717 10.4624L21.4346 12.4557ZM19.3 12.5C20.2097 12.5 20.8926 12.5 21.4346 12.4557L21.2717 10.4624C20.8302 10.4984 20.2435 10.5 19.3 10.5V12.5ZM5.7 12.5H19.3V10.5H5.7V12.5ZM3.56541 12.4557C4.10745 12.5 4.79033 12.5 5.7 12.5V10.5C4.7565 10.5 4.16978 10.4984 3.72827 10.4624L3.56541 12.4557ZM2.27453 12.1458C2.62237 12.323 3.02389 12.4115 3.56541 12.4557L3.72827 10.4624C3.30958 10.4282 3.20095 10.3732 3.18251 10.3638L2.27453 12.1458ZM0.854229 10.7255C1.16582 11.337 1.663 11.8342 2.27453 12.1458L3.18251 10.3638C2.94731 10.2439 2.75608 10.0527 2.63624 9.81749L0.854229 10.7255ZM0.544279 9.43459C0.588523 9.97612 0.676994 10.3776 0.854229 10.7255L2.63624 9.81749C2.62685 9.79905 2.57184 9.69041 2.53764 9.27173L0.544279 9.43459ZM0.5 7.3C0.5 8.20967 0.499992 8.89255 0.544279 9.43459L2.53764 9.27173C2.50156 8.83022 2.5 8.2435 2.5 7.3H0.5ZM0.5 5.7V7.3H2.5V5.7H0.5ZM0.544279 3.56541C0.499992 4.10745 0.5 4.79033 0.5 5.7H2.5C2.5 4.7565 2.50156 4.16978 2.53764 3.72827L0.544279 3.56541ZM0.854229 2.27453C0.676994 2.62237 0.588523 3.02388 0.544279 3.56541L2.53764 3.72827C2.57184 3.30959 2.62685 3.20095 2.63624 3.18251L0.854229 2.27453ZM2.27453 0.854229C1.663 1.16582 1.16582 1.663 0.854229 2.27453L2.63624 3.18251C2.75608 2.94731 2.94731 2.75608 3.18251 2.63624L2.27453 0.854229ZM3.56541 0.544279C3.02388 0.588523 2.62237 0.676994 2.27453 0.854229L3.18251 2.63624C3.20095 2.62685 3.30959 2.57184 3.72827 2.53764L3.56541 0.544279ZM5.7 0.5C4.79033 0.5 4.10745 0.499992 3.56541 0.544279L3.72827 2.53764C4.16978 2.50156 4.7565 2.5 5.7 2.5V0.5ZM-0.0367777 1.82054C-0.297693 2.33261 -0.403069 2.88019 -0.4524 3.48397C-0.500778 4.07609 -0.5 4.80642 -0.5 5.7H1.5C1.5 4.77341 1.50078 4.13862 1.54096 3.64684C1.58018 3.16673 1.65192 2.91166 1.74524 2.72852L-0.0367777 1.82054ZM1.82054 -0.0367777C1.02085 0.370684 0.370684 1.02085 -0.0367777 1.82054L1.74524 2.72852C1.96095 2.30516 2.30516 1.96095 2.72852 1.74524L1.82054 -0.0367777ZM5.7 -0.5C4.80642 -0.5 4.07609 -0.500778 3.48397 -0.4524C2.88019 -0.403069 2.33261 -0.297693 1.82054 -0.0367777L2.72852 1.74524C2.91166 1.65192 3.16673 1.58018 3.64684 1.54096C4.13862 1.50078 4.77341 1.5 5.7 1.5V-0.5ZM19.3 -0.5H5.7V1.5H19.3V-0.5ZM23.1795 -0.0367777C22.6674 -0.297693 22.1198 -0.403069 21.516 -0.4524C20.9239 -0.500778 20.1936 -0.5 19.3 -0.5V1.5C20.2266 1.5 20.8614 1.50078 21.3532 1.54096C21.8333 1.58018 22.0883 1.65192 22.2715 1.74524L23.1795 -0.0367777ZM25.0368 1.82054C24.6293 1.02085 23.9791 0.370684 23.1795 -0.0367776L22.2715 1.74524C22.6948 1.96095 23.039 2.30516 23.2548 2.72852L25.0368 1.82054ZM25.5 5.7C25.5 4.80642 25.5008 4.07609 25.4524 3.48397C25.4031 2.88019 25.2977 2.33261 25.0368 1.82054L23.2548 2.72852C23.3481 2.91166 23.4198 3.16673 23.459 3.64684C23.4992 4.13862 23.5 4.77341 23.5 5.7H25.5ZM25.5 7.3V5.7H23.5V7.3H25.5ZM25.0368 11.1795C25.2977 10.6674 25.4031 10.1198 25.4524 9.51603C25.5008 8.92391 25.5 8.19358 25.5 7.3H23.5C23.5 8.22659 23.4992 8.86138 23.459 9.35316C23.4198 9.83327 23.3481 10.0883 23.2548 10.2715L25.0368 11.1795ZM23.1795 13.0368C23.9791 12.6293 24.6293 11.9791 25.0368 11.1795L23.2548 10.2715C23.039 10.6948 22.6948 11.039 22.2715 11.2548L23.1795 13.0368ZM19.3 13.5C20.1936 13.5 20.9239 13.5008 21.516 13.4524C22.1198 13.4031 22.6674 13.2977 23.1795 13.0368L22.2715 11.2548C22.0883 11.3481 21.8333 11.4198 21.3532 11.459C20.8614 11.4992 20.2266 11.5 19.3 11.5V13.5ZM5.7 13.5H19.3V11.5H5.7V13.5ZM1.82054 13.0368C2.33261 13.2977 2.88019 13.4031 3.48397 13.4524C4.07609 13.5008 4.80642 13.5 5.7 13.5V11.5C4.77341 11.5 4.13862 11.4992 3.64684 11.459C3.16673 11.4198 2.91166 11.3481 2.72852 11.2548L1.82054 13.0368ZM-0.0367776 11.1795C0.370684 11.9791 1.02085 12.6293 1.82054 13.0368L2.72852 11.2548C2.30516 11.039 1.96095 10.6948 1.74524 10.2715L-0.0367776 11.1795ZM-0.5 7.3C-0.5 8.19358 -0.500778 8.92391 -0.4524 9.51603C-0.403069 10.1198 -0.297693 10.6674 -0.0367777 11.1795L1.74524 10.2715C1.65192 10.0883 1.58018 9.83327 1.54096 9.35316C1.50078 8.86138 1.5 8.22659 1.5 7.3H-0.5ZM-0.5 5.7V7.3H1.5V5.7H-0.5ZM25.2507 5.53145C25.6823 5.64251 26 6.03541 26 6.5H28C28 5.10075 27.043 3.92755 25.7493 3.59457L25.2507 5.53145ZM26.5 8.43699V4.56301H24.5V8.43699H26.5ZM26 6.5C26 6.96459 25.6823 7.35749 25.2507 7.46855L25.7493 9.40543C27.043 9.07245 28 7.89925 28 6.5H26Z" fill="black" mask="url(#path-1-inside-1_5_59)"/>
+                  </g>
+                  </svg>
+                  </div>
+                  <div data-layer="Capacity" class="Capacity" style="width: 20px; height: 11px; left: 2px; top: 2px; position: absolute; background: black; border-radius: 1.50px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+<script>
+    function updateDateTime() {
+        let now = new Date();
+        // Get current time
+        let hours = now.getHours().toString().padStart(2, '0');
+        let minutes = now.getMinutes().toString().padStart(2, '0');
+        document.getElementById("current-time").innerText = `${hours}:${minutes}`;
+
+        // Get current date 
+        let options = { weekday: 'short', month: 'short', day: 'numeric' };
+        let formattedDate = now.toLocaleDateString('en-US', options);
+        document.getElementById("current-date").innerText = formattedDate;
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let progressBar = document.querySelector(".progress-bar");
+        let width = 0;
+        let interval = setInterval(function () {
+            if (width >= 100) {
+                clearInterval(interval);
+                document.querySelector(".preloader").style.display = "none"; // Hide preloader after completion
+                document.body.classList.remove("blurred"); 
+            } else {
+                width++;
+                progressBar.style.width = width + "%";
+            }
+        }, 10); 
+    });
+
+
+window.onload = function () {
+    class Chatter {
+        constructor() {
+            this.inputBox = document.getElementById("input-box");
+            this.chatContainer = document.getElementById("chat-container");
+        }
+
+        async sendMessage() {
+            let userMessage = this.inputBox.value.trim();
+            if (userMessage === "") return;
+
+            let userDiv = document.createElement("div");
+            userDiv.className = "User";
+            userDiv.style = "width: 1070px; height: 44px; padding-left: 16px; left: 22px; top: 21px; position: relative; justify-content: flex-start; align-items: flex-start; display: inline-flex; padding-bottom: 11px; padding-top: 21px;";
+
+            let userContent = `
+                <div data-layer="Contents" class="Contents" style="flex: 1 1 0; align-self: stretch; padding: 11px 16px; border-bottom: 0.33px rgba(84, 84, 86, 0.34) solid; justify-content: flex-start; align-items: flex-start; display: flex; flex-direction: row;">
+                    <div data-layer="Title" class="Title" style="width: 100px; min-height: 22px; color: black; font-size: 17px; font-family: SF Pro; font-weight: 400; line-height: 22px; word-wrap: break-word" id="d1">User</div>
+                    <div data-layer="Value" class="Value" style="flex: 1 1 0; color: rgba(255, 255, 255, 0.80); font-size: 17px; font-family: SF Pro; font-weight: 400; line-height: 22px; white-space: pre-wrap; word-wrap: break-word; overflow-wrap: break-word;">${userMessage}</div>
+                </div>
+            `;
+
+            userDiv.innerHTML = userContent;
+            this.chatContainer.appendChild(userDiv);
+
+            this.inputBox.value = "";
+
+            // Create Bot response block
+            let botDiv = document.createElement("div");
+            botDiv.className = "Bot";
+            botDiv.style = "width: 1070px; height: 44px; padding-left: 16px; left: 22px; top: 41px; position: relative; justify-content: flex-start; align-items: flex-start; display: inline-flex; padding-bottom: 51px;";
+
+            // Unique ID for bot response
+            let botId = `bot-${Date.now()}`;
+
+            let botContent = `
+                <div data-layer="Contents" class="Contents" style="flex: 1 1 0; align-self: stretch; padding: 11px 16px; border-bottom: 0.33px rgba(84, 84, 86, 0.34); justify-content: flex-start; align-items: flex-start; display: flex; flex-direction: row;">
+                    <div data-layer="Title" class="Title" style="width: 100px; min-height: 22px; color: black; font-size: 17px; font-family: SF Pro; font-weight: 400; line-height: 22px; word-wrap: break-word" id="d1">Bot</div>
+                    <div class="Value" id="${botId}" style="flex: 1 1 0; color: rgba(255, 255, 255, 0.80); font-size: 17px; font-family: SF Pro; font-weight: 400; line-height: 22px; white-space: pre-wrap; word-wrap: break-word; overflow-wrap: break-word;">Thinking...</div>
+                </div>
+            `;
+
+            botDiv.innerHTML = botContent;
+            this.chatContainer.appendChild(botDiv);
+
+            try {
+                let response = await fetch("http://127.0.0.1:5000/chat", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ prompt: userMessage })
+                });
+
+                let data = await response.json();
+                let botMessage = data.response || "Error: No response from server";
+
+                let botResponseDiv = document.getElementById(botId);
+                botResponseDiv.textContent = botMessage;
+
+                // Adjust padding dynamically
+                let newLines = (botMessage.match(/\n/g) || []).length;
+                let extraPadding = newLines * 20; 
+                botDiv.style.paddingBottom = `${20 + extraPadding}px`;
+                
+            } catch (error) {
+                console.error("Error:", error);
+                document.getElementById(botId).textContent = "Error fetching response";
+            }
+        }
+    }
+
+    const chat = new Chatter();
+    document.getElementById("sendButton").addEventListener("click", () => chat.sendMessage());
+};
+
+
+</script>
+</html>
