@@ -9,3 +9,9 @@ model.pycuda/
 __pycache__/
 *.dylib
 .env
+
+*.py
+starter/
+__pycache__/
+*.pkl
+*.pt
